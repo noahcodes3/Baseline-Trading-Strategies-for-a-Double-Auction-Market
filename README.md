@@ -69,6 +69,33 @@ Mixed Strategy
 - Randomly samples from available strategies based on predefined probabilities.
 - Used to simulate heterogeneous market participants.
 
+### Monte Carlo Simulation & Analysis
+
+The simulator includes a Monte Carlo experiment (100 simulations × 100 timesteps) to analyse aggregate market dynamics under stochastic signal generation.
+
+Outputs include:
+
+Price Evolution
+- Mean price path across simulations
+- 10–90% uncertainty band
+- Visualises emergent price drift under aggregated order flow
+
+Action Frequency
+- Aggregate Buy/Sell/Hold counts across all simulations.
+- Provides insight into behavioural intensity and directional bias.
+
+Inventory Dynamics
+- Mean inventory trajectories for each trader type
+- Highlights risk accumulation
+- Identifying behavioural divergence
+
+Signal Distribution
+- Histogram of generated signals to verify distributional assumptions.
+
+Execution 
+- currently modelled using a simplified immediate-fill mechanism.
+- A full double-auction clearing engine will be integrated into the complete model.
+
 ### How can you run this code
 
 Clone the repository:
